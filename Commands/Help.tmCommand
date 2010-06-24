@@ -16,7 +16,7 @@ result=`find /Applications/SuperCollider/Help ~/Library/Application\ Support/Sup
 if [[ $result ]]; then
   exit_show_html  "&lt;meta http-equiv='Refresh' content='0;URL=file://$result'&gt;" \;
 else
-  exit_show_tool_tip "No help file for $what"
+  exit_show_html "&lt;meta http-equiv='Refresh' content='0;URL=file:///Applications/SuperCollider/Help/Help.html'&gt;" \;
 fi</string>
 	<key>fallbackInput</key>
 	<string>none</string>
