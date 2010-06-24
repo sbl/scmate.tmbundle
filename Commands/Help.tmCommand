@@ -5,9 +5,19 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>what=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
+	<string># we find help by filesystem not by using the supercollider internal .findHelpFile
+# works only for .html so far
+# it searches the default sc paths. if you need to, add your own paths here.
 
-sc_dispatcher -s "SCTextMate.findRawHelp('$what');"</string>
+what=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
+
+result=`find /Applications/SuperCollider/Help ~/Library/Application\ Support/SuperCollider/Extensions -name $what.html`
+
+if [[ $result ]]; then
+  exit_show_html  "&lt;meta http-equiv='Refresh' content='0;URL=file://$result'&gt;" \;
+else
+  exit_show_tool_tip "No help file for $what"
+fi</string>
 	<key>fallbackInput</key>
 	<string>none</string>
 	<key>input</key>

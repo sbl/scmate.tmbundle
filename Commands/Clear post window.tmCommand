@@ -13,6 +13,8 @@ osascript -e 'tell application "System Events" to tell process "Terminal" to key
 osascript -e 'tell application "TextMate" to activate'</string>
 	<key>input</key>
 	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@#</string>
 	<key>name</key>
 	<string>Clear post window</string>
 	<key>output</key>

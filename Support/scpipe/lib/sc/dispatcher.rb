@@ -23,6 +23,6 @@ module SC
 
     def interpret_silent(sc_code)
       open(@pipe, "w") { |io| io << sc_code << "\x1b" } 
-    end    
+    end
   end
 end
