@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>(
+var w, wWidth, wHeight;
+var width, height;
+
+wWidth = ${1:300};
+wHeight = ${2:300};
+
+width = wWidth - 20;
+height = 20;
+
+w = Window("${3:a gui}", Rect(128, 64, wWidth, wHeight));
+w.addFlowLayout; 
+
+EZSlider(w, width@height, "slid", \freq, { |v| 
+    ${4:v.value.postln; // action} 
+});
+
+w.front;
+w.onClose = {  };
+)</string>
+	<key>name</key>
+	<string>gui</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>gui</string>
+	<key>uuid</key>
+	<string>06916718-ED05-49A7-963C-5B3066C80A4D</string>
+</dict>
+</plist>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -w
+
+# SuperCollider auto completion. Works only for Classes so far.
+# Some code borrowed from the textmate ruby completion code
+
+require "#{ENV["TM_SUPPORT_PATH"]}/lib/ui"
+require "#{ENV["TM_SUPPORT_PATH"]}/lib/exit_codes"
+
+word = ENV['TM_CURRENT_WORD']
+completions = []
+selection = ""
+
+open(File.expand_path("~/Library/Application Support/SuperCollider/sclang_completion_dict"), "r") { |io|  
+  completions = io.select{|klass| klass =~ /^#{word}/ }
+}
+
+if completions.size == 1
+  selection = completions.first
+elsif completions.size &gt; 1
+  selection = completions[TextMate::UI.menu(completions)] rescue exit
+else
+  TextMate.exit_show_tool_tip "No matches were found."
+end
+
+print selection.sub(/\A#{Regexp.escape(ENV['TM_CURRENT_WORD'].to_s)}/, "").chomp</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~</string>
+	<key>name</key>
+	<string>Code completion</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>uuid</key>
+	<string>E78C409B-57D2-4CB1-99F0-0C4A953E4584</string>
+</dict>
+</plist>

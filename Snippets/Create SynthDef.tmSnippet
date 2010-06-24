@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SynthDef(\\${1:foobar}, { 
+	|${2:out=0}$3, gate=1|
+	var env = Linen.kr(gate, 0.01, 1, 0.01, 2);
+	var snd;
+	
+	snd = $0;
+	snd = snd * env;
+	Out.ar(out, snd);
+}).add;</string>
+	<key>name</key>
+	<string>Create SynthDef</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>sdef</string>
+	<key>uuid</key>
+	<string>99EFA3F0-FDE6-4209-BED6-E051109CC51A</string>
+</dict>
+</plist>

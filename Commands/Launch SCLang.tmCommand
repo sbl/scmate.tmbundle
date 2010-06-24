@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+require File.join(ENV['TM_BUNDLE_SUPPORT'], 'scpipe', 'lib', 'sc')
+
+if File.exists?(SC::Pipe.pipe_loc &amp;&amp; SC::Pipe.pid_loc)
+  	puts "A sclang session is already running."
+else
+	puts "Starting SCLANG"
+	sc_script = File.join(ENV['TM_BUNDLE_SUPPORT'], 'bin', 'start_pipe')
+	exec "open -a terminal.app '#{sc_script}'&amp;" 
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@</string>
+	<key>name</key>
+	<string>Launch SCLang</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>uuid</key>
+	<string>BD57EAF1-9737-4383-B90B-5DDC37409909</string>
+</dict>
+</plist>
