@@ -11,7 +11,7 @@
 
 what=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
 
-result=`find /Applications/SuperCollider/Help ~/Library/Application\ Support/SuperCollider/Extensions -name $what.html`
+result=`find /Applications/SuperCollider/Help ~/Library/Application\ Support/SuperCollider/Extensions -follow -name $what.html`
 
 if [[ $result ]]; then
   exit_show_html  "&lt;meta http-equiv='Refresh' content='0;URL=file://$result'&gt;" \;

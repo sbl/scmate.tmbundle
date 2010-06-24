@@ -3,19 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Tdef(\\${1:foo}, {
-  ${2:inf}.do{
-    $3
-    0.5.wait;
-  }
-}).play</string>
+	<string>s.sendMsg(\b_allocRead, 0, "${2:sounds/a11wlk01.wav}")</string>
 	<key>name</key>
-	<string>Tdef</string>
+	<string>b_alloc</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>td</string>
+	<string>sbuf</string>
 	<key>uuid</key>
-	<string>423C88CF-38F3-404F-9CB8-8CA97AECF8A4</string>
+	<string>6DA47ACC-C64A-4753-962E-79700C41620D</string>
 </dict>
 </plist>

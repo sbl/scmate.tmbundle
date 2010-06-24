@@ -3,19 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Tdef(\\${1:foo}, {
-  ${2:inf}.do{
-    $3
-    0.5.wait;
-  }
-}).play</string>
+	<string>s.sendMsg(\\${1})</string>
 	<key>name</key>
-	<string>Tdef</string>
+	<string>s.sendMsg</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>td</string>
+	<string>sm</string>
 	<key>uuid</key>
-	<string>423C88CF-38F3-404F-9CB8-8CA97AECF8A4</string>
+	<string>696A87B3-1128-46AF-A615-E6045C968ED9</string>
 </dict>
 </plist>
