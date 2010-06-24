@@ -5,7 +5,8 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>sc_dispatcher -s "SCTextMate.methodReferences('$TM_SELECTED_TEXT')"</string>
+	<string>what=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
+sc_dispatcher -s "SCTextMate.methodReferences('$what')"</string>
 	<key>fallbackInput</key>
 	<string>none</string>
 	<key>input</key>
