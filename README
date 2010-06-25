@@ -1,7 +1,9 @@
 A TextMate Bundle for SuperCollider
 ###################################
 
-Work is based on http://github.com/rfwatson/supercollider-tmbundle but this implementation uses pipes for communication instead of OSC messages & you don't have to start the supercollider cocoa app to use the bundle.
+Work is based on http://github.com/rfwatson/supercollider-tmbundle by Rob W. This implementation uses pipes for communication instead of OSC messages & you don't have to start the supercollider cocoa app to use the bundle.
+
+Short preview: http://vimeo.com/12853571
 
 Prerequisites:
 * TextMate Terminal executable "mate" (Help/Terminal Usage...)
