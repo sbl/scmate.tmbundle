@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>m = ProxyMixer(p, 8, "Mixer", Rect(0, 50, 0,0));</string>
+	<string>m = ProxyMixer(p, 8);</string>
 	<key>name</key>
 	<string>ProxyMixer</string>
 	<key>scope</key>
