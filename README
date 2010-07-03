@@ -16,7 +16,7 @@ Features:
 * Common commands (Recompile, Open Class File, Find References ...)
 
 Installation:
-* git clone http://github.com/sbl/scmate.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles
+* git clone http://github.com/sbl/scmate.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/scmate.tmbundle
 * (OR) download the bundle http://github.com/downloads/sbl/scmate.tmbundle/scmate.tmbundle.zip and double-click it
 * choose "finish installation" from the Bundle Menu
 * Start the language with cmd+f1 (a terminal window will come up)

@@ -61,7 +61,7 @@
 			<key>match</key>
 			<string>[a-z][a-zA-Z0-9_]*\:</string>
 			<key>name</key>
-			<string>support.name.tag.supercollider</string>
+			<string>entity.name.tag.supercollider</string>
 		</dict>
 		<dict>
 			<key>captures</key>
