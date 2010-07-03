@@ -10,9 +10,9 @@
 audio_file_string = "\"" &lt;&lt; ENV['TM_DROPPED_FILEPATH'] &lt;&lt; "\""
 
 if(ENV['TM_MODIFIER_FLAGS'] == "OPTION")
-	puts "Buffer.read(s, #{audio_file_string})"
+	print "Buffer.read(s, #{audio_file_string})"
 else
-	puts audio_file_string
+	print audio_file_string
 end</string>
 	<key>draggedFileExtensions</key>
 	<array>

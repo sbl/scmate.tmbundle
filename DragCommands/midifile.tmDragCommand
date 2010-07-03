@@ -10,9 +10,9 @@
 midi_file_string = "\"#{ENV['TM_DROPPED_FILEPATH']}\""
 
 if(ENV['TM_MODIFIER_FLAGS'] == "OPTION")
-	puts "SimpleMIDIFile.read(#{midi_file_string})"
+	print "SimpleMIDIFile.read(#{midi_file_string});"
 else
-	puts midi_file_string
+	print midi_file_string
 end</string>
 	<key>draggedFileExtensions</key>
 	<array>
