@@ -7,28 +7,27 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wKU
 
-audio_file_string = "\"" &lt;&lt; ENV['TM_DROPPED_FILEPATH'] &lt;&lt; "\""
+midi_file_string = "\"#{ENV['TM_DROPPED_FILEPATH']}\""
 
 if(ENV['TM_MODIFIER_FLAGS'] == "OPTION")
-	puts "Buffer.read(s, #{audio_file_string})"
+	puts "SimpleMIDIFile.read(#{midi_file_string})"
 else
-	puts audio_file_string
+	puts midi_file_string
 end</string>
 	<key>draggedFileExtensions</key>
 	<array>
-		<string>aif</string>
-		<string>aiff</string>
-		<string>wav</string>
+		<string>midi</string>
+		<string>mid</string>
 	</array>
 	<key>input</key>
 	<string>selection</string>
 	<key>name</key>
-	<string>aif, wav</string>
+	<string>midifile</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>uuid</key>
-	<string>7BC7841C-4B28-4BB7-ACDF-27306167FBCB</string>
+	<string>0BB1DD0C-B78A-4784-9E60-60D8ABD7FFEF</string>
 </dict>
 </plist>
