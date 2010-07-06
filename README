@@ -7,8 +7,8 @@ Short preview: http://vimeo.com/12853571
 
 Prerequisites:
 * TextMate Terminal executable "mate" (Help/Terminal Usage...)
-* A recent SuperCollider Installation (>3.3) installed under /Applications/SuperCollider
-* If you want GUI display you have to install the SwingOSC.jar in the root (/Applications/SuperCollider) folder, which is the default anyways.
+* A recent SuperCollider Installation (> 3.4) installed under /Applications/SuperCollider
+* If you want GUI display, you have to install the SwingOSC.jar in the root (/Applications/SuperCollider) folder and the corresponding supercollider classes in your extensions folder. 
 
 Features:
 * Snippets
