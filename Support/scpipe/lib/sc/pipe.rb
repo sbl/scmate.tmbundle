@@ -18,7 +18,6 @@ module SC
     @@pipe_loc = "/tmp/sclang-pipe"
     @@rundir = "/Applications/SuperCollider"
     @@pid_loc = "/tmp/sclangpipe_app-pid" 
-    @@app = File.join(@@rundir, 'sclang')            
         
     class << self
       def serve
@@ -51,11 +50,14 @@ module SC
       end
    
       def run_pipe
+        Dir.chdir(@@rundir)
+        
         @@pipeproc = Proc.new {
           trap("INT") do
             Process.exit
           end
-          IO.popen("#{@@app} -d #{@@rundir.chomp}", "w") do |sclang|
+          
+          IO.popen("./sclang -d #{@@rundir.chomp}", "w") do |sclang|
             loop {
               x = `cat #{@@pipe_loc}`
               sclang.print x if x
