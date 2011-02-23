@@ -13,7 +13,7 @@ sc_dispatcher -i "$code"</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string></string>
+	<string>$</string>
 	<key>name</key>
 	<string>Interpret</string>
 	<key>output</key>
