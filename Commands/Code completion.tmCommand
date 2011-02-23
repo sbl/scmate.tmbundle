@@ -19,6 +19,7 @@ selection = ""
 
 open(File.expand_path("~/Library/Application Support/SuperCollider/sclang_completion_dict"), "r") { |io|  
   completions = io.select{|klass| klass =~ /^#{word}/ }
+	completions.uniq!
 }
 
 if completions.size == 1
