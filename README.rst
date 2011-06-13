@@ -3,7 +3,7 @@ A TextMate Bundle for SuperCollider
 ====================================
 
 
-Work is based on http://github.com/rfwatson/supercollider-tmbundle by Rob W. This implementation uses pipes for communication instead of OSC messages. This means you don't have to start the supercollider cocoa app to use the bundle and you don't have a ~300 character limit to send messages to SC.
+Work is based on Rob W's `supercollider-tmbundle`_. This implementation uses pipes for communication instead of OSC messages. This means you don't have to start the supercollider cocoa app to use the bundle and you don't have a ~300 character limit to send messages to SC.
 
 There is a short preview `on vimeo <http://vimeo.com/12853571>`__.
 
@@ -14,9 +14,9 @@ There is a short preview `on vimeo <http://vimeo.com/12853571>`__.
 Prerequisites
 =============
 
-* TextMate Terminal executable "mate" (Help/Terminal Usage...)
-* A recent SuperCollider Installation (>3.3) installed under /Applications/SuperCollider
-* If you want GUI display you have to install the SwingOSC.jar in the root (/Applications/SuperCollider) folder, which is the default anyways.
+* TextMate Terminal executable ``mate`` (Help/Terminal Usage...)
+* A recent SuperCollider Installation (>3.3) installed under ``/Applications/SuperCollider``
+* If you want GUI display you have to install ``SwingOSC.jar`` in the root (``/Applications/SuperCollider``) folder, which is the default anyways.
 
 Features
 ========
@@ -28,13 +28,23 @@ Features
 Installation
 ============
 
-* git clone http://github.com/sbl/scmate.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/scmate.tmbundle
-* (OR) download the bundle http://github.com/downloads/sbl/scmate.tmbundle/scmate.tmbundle.zip and double-click it
+* ``git clone http://github.com/sbl/scmate.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/scmate.tmbundle``
+* (OR) download `the bundle`_ and double-click it
 * choose "finish installation" from the Bundle Menu
-* Start the language with cmd+f1 (a terminal window will come up)
+* Start the language with ``cmd+f1`` (a terminal window will come up)
+
+Troubleshooting
+===============
+
+See `the announcement post`_ for this package for help with some common troubles:
 
 Licence
 =======
 
-This work is licensed under the GNU GPL http://www.gnu.org/licenses/gpl.html
+This work is licensed under the `GNU GPL`_ 
 sbl 2010
+
+.. _the announcement post: http://new-supercollider-mailing-lists-forums-use-these.2681727.n2.nabble.com/scmate-textmate-bundle-td5239359.html
+.. _GNU GPL: http://www.gnu.org/licenses/gpl.html
+.. _the bundle: http://github.com/downloads/sbl/scmate.tmbundle/scmate.tmbundle.zip
+.. _supercollider-tmbundle: http://github.com/rfwatson/supercollider-tmbundle
