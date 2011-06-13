@@ -5,7 +5,11 @@ A TextMate Bundle for SuperCollider
 
 Work is based on http://github.com/rfwatson/supercollider-tmbundle by Rob W. This implementation uses pipes for communication instead of OSC messages. This means you don't have to start the supercollider cocoa app to use the bundle and you don't have a ~300 character limit to send messages to SC.
 
-Short preview: http://vimeo.com/12853571
+Short preview:
+
+.. raw:: html
+
+  <iframe src="http://player.vimeo.com/video/12853571?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0"></iframe><p><a href="http://vimeo.com/12853571">SuperCollider Textmate Bundle</a> from <a href="http://vimeo.com/sbl">sbl</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 Prerequisites
 =============
