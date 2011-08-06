@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Ndef(\\${1:foo}, {
+	$2
+}).play;</string>
+	<key>name</key>
+	<string>Ndef</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>nd</string>
+	<key>uuid</key>
+	<string>DEEB4394-EDF0-4324-991A-25D3FA60CD93</string>
+</dict>
+</plist>
