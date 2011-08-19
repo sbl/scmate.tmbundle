@@ -57,7 +57,7 @@ module SC
             Process.exit
           end
           
-          IO.popen("./sclang -d #{@@rundir.chomp}", "w") do |sclang|
+          IO.popen("./sclang -d #{@@rundir.chomp} -i scmate", "w") do |sclang|
             loop {
               x = `cat #{@@pipe_loc}`
               sclang.print x if x
