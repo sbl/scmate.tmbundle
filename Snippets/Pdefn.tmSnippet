@@ -3,19 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Pdef(\\${1:foo}, 
-  Pbind(
-    \instrument, \\${2:bar},
-    \dur, 1
-  )
-).play</string>
+	<string>Pdefn(\\${1:key}, ${2:value});</string>
 	<key>name</key>
-	<string>Pdef</string>
+	<string>Pdefn</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>pd</string>
+	<string>pdn</string>
 	<key>uuid</key>
-	<string>426EF873-9505-4B6E-9294-C903283A06A0</string>
+	<string>2FF444AF-5C32-4525-B898-D017BA1026E1</string>
 </dict>
 </plist>
