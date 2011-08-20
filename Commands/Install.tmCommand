@@ -21,9 +21,15 @@ if File.exists?(fname)
 	File.rename(fname, fname + '.bak')
 end
 
-if not File.directory?(File.expand_path("~/Library/Application Support/SuperCollider/Extensions"))
+if not File.directory?(File.expand_path("~/Library/Application Support/SuperCollider"))
 	could_not_locate
 else
+	# create the Extensions directory if it does not exist
+	ext_dir = File.expand_path("~/Library/Application Support/SuperCollider/Extensions")
+	unless FileTest::directory?(ext_dir)	
+		Dir::mkdir(ext_dir)
+	end
+
 	if system %Q{ln -s '#{ENV['TM_BUNDLE_SUPPORT']}/classes/SCTextMate.sc' '#{File.expand_path("~/Library/Application Support/SuperCollider/Extensions/SCTextMate.sc")}'}
 		puts "&lt;span style='color:green'&gt;Successfully installed TextMate class&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;"
 		puts "Relaunch SuperCollider to complete installation."
@@ -31,9 +37,7 @@ else
 		puts "There was an error installing the class file.&lt;br/&gt;&lt;br/&gt;"
 		could_not_locate
 	end
-end
-
-</string>
+end</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
