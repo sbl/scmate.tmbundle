@@ -3,16 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>EZSlider(${1:w}, ${2:width}@${3:height}, "${4:slider}", ${5:\unipolar}, { |slider|
-	${6:slider.value};
-});</string>
+	<string>Button(${1:w}, ${2:width}@${3:height})
+  .states_([
+    ["${4:label}", ${5:Color.black}],
+  ])
+  .action_({ |button|
+    ${6:button.value};
+  });</string>
 	<key>name</key>
-	<string>EZSlider</string>
+	<string>Button</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>slid</string>
+	<string>butt</string>
 	<key>uuid</key>
-	<string>70111A31-0C51-486D-986B-262567F9DCC6</string>
+	<string>F18C1B8A-8641-4B0F-8D08-0C600451A8DF</string>
 </dict>
 </plist>
