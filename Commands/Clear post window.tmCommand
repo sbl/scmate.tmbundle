@@ -14,11 +14,11 @@ osascript -e 'tell application "TextMate" to activate'</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@#</string>
+	<string>@C</string>
 	<key>name</key>
 	<string>Clear post window</string>
 	<key>output</key>
-	<string>discard</string>
+	<string>showAsTooltip</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>uuid</key>
