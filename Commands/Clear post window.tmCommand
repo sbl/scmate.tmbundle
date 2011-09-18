@@ -9,7 +9,7 @@
 # couldn't use the cmd+shift c control because applescript assumed a pressed shift button
 
 osascript -e 'tell application "Terminal" to activate'
-osascript -e 'tell application "System Events" to tell process "Terminal" to keystroke "k" using command down'
+osascript -e 'tell application "System Events" to tell process "Terminal" to click menu item 16 of menu 1 of menu bar item 5 of menu bar 1'
 osascript -e 'tell application "TextMate" to activate'</string>
 	<key>input</key>
 	<string>none</string>
@@ -18,7 +18,7 @@ osascript -e 'tell application "TextMate" to activate'</string>
 	<key>name</key>
 	<string>Clear post window</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>discard</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>uuid</key>
