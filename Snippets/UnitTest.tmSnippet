@@ -4,8 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.sc)?/(?2::\u$1)/g}} : UnitTest {
-	${2:// this is a helper for autotesting	
-	*initClass {
+	${2:*initClass {
 		StartUp.add {
 			5.do {"".postln \};
 			$1.run;
