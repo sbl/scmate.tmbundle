@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>switch ($1)
-	{$2}	{$3}
-	{$4}	{$5};
-</string>
+	<string>this.assertArrayFloatEquals(${1:a}, ${2:b}, "${3:message}", ${4:0.001});</string>
 	<key>name</key>
-	<string>switch</string>
+	<string>assertArrayFloatEquals</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>switch</string>
+	<string>asa</string>
 	<key>uuid</key>
-	<string>A2B8FE76-A086-4FD3-B832-7154B7CE88F4</string>
+	<string>0A3A9352-7327-401C-BE80-BFBA63511452</string>
 </dict>
 </plist>

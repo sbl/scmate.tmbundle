@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>switch ($1)
-	{$2}	{$3}
-	{$4}	{$5};
-</string>
+	<string>this.assertEquals(${1:a}, ${2:b}, "${3:message}");</string>
 	<key>name</key>
-	<string>switch</string>
+	<string>assertEquals</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>switch</string>
+	<string>ase</string>
 	<key>uuid</key>
-	<string>A2B8FE76-A086-4FD3-B832-7154B7CE88F4</string>
+	<string>16DF81FF-52E1-4A9B-AA07-629EEC10B025</string>
 </dict>
 </plist>

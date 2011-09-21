@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.sc)?/(?2::\u$1)/g}} : UnitTest {
+	${2:// this is a helper for autotesting	
+	*initClass {
+		StartUp.add {
+			5.do {"".postln \};
+			$1.run;
+		\}
+	\}
+
+	}setUp {
+		$3
+	}
+
+	test_${4:what} {
+		${5://assert}
+	}
+	
+	tearDown {
+
+	}
+}</string>
+	<key>name</key>
+	<string>UnitTest</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>tc</string>
+	<key>uuid</key>
+	<string>34E320F6-0651-4431-BED0-328DB7C811D1</string>
+</dict>
+</plist>

@@ -3,17 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>switch ($1)
-	{$2}	{$3}
-	{$4}	{$5};
-</string>
+	<string>test_${1:something} {
+	${2://assert}
+}</string>
 	<key>name</key>
-	<string>switch</string>
+	<string>test</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>switch</string>
+	<string>test</string>
 	<key>uuid</key>
-	<string>A2B8FE76-A086-4FD3-B832-7154B7CE88F4</string>
+	<string>1DAAAB3C-498B-434B-909F-A22CB8F5765F</string>
 </dict>
 </plist>
