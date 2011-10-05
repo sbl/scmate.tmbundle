@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>$1, {$2},</string>
+	<string>${1:updater} = { |obj, what, val|
+ ${2: // change }
+};
+</string>
 	<key>name</key>
-	<string>case</string>
+	<string>Updater</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>case</string>
+	<string>up</string>
 	<key>uuid</key>
-	<string>7DE9257E-D1DB-4B5F-84D4-B5220A9751A3</string>
+	<string>DB2E540F-0C3A-49A5-8F68-7A55A280D63C</string>
 </dict>
 </plist>

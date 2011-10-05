@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>$1, {$2},</string>
+	<string>${1:who} = NodeProxy.new;</string>
 	<key>name</key>
-	<string>case</string>
+	<string>TaskProxy</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>case</string>
+	<string>tp</string>
 	<key>uuid</key>
-	<string>7DE9257E-D1DB-4B5F-84D4-B5220A9751A3</string>
+	<string>0C4C08AC-0FBD-457D-8C35-D8249890536C</string>
 </dict>
 </plist>

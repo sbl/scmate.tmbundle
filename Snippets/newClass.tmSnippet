@@ -14,6 +14,8 @@
 }</string>
 	<key>name</key>
 	<string>class</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
 	<key>tabTrigger</key>
 	<string>class</string>
 	<key>uuid</key>
