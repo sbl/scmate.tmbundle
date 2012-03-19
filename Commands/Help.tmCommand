@@ -5,19 +5,11 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># we find help by filesystem not by using the supercollider internal .findHelpFile
-# works only for .html so far
-# it searches the default sc paths. if you need to, add your own paths here.
+	<string>what=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
 
-what=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
+# change path if you have SwingOSC installed somewhere else
 
-result=`find /Applications/SuperCollider/Help ~/Library/Application\ Support/SuperCollider/Extensions -follow -name $what.html`
-
-if [[ $result ]]; then
-  exit_show_html  "&lt;meta http-equiv='Refresh' content='0;URL=file://$result'&gt;" \;
-else
-  exit_show_html "&lt;meta http-equiv='Refresh' content='0;URL=file:///Applications/SuperCollider/Help/Help.html'&gt;" \;
-fi</string>
+sc_dispatcher -s "HelpBrowser.openHelpFor(\"$what\");"</string>
 	<key>fallbackInput</key>
 	<string>none</string>
 	<key>input</key>

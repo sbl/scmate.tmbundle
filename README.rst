@@ -15,14 +15,14 @@ Prerequisites
 =============
 
 * TextMate Terminal executable ``mate`` (Help/Terminal Usage...)
-* A recent SuperCollider Installation (>3.3) installed under ``/Applications/SuperCollider``
-* If you want GUI display you have to install ``SwingOSC.jar`` in the root (``/Applications/SuperCollider``) folder, which is the default anyways.
+* A SuperCollider Installation (>3.5) installed under ``/Applications/SuperCollider.app`` (you'll need to manually update the paths under scmate.tmbundle/Support/scpipe/lib/sc/pipe.rb if you need another installation directory)
+* For a GUI it is recommended to use the new QT GUI (Cocoa won't work). Add ``GUI.qt;`` to your ``startup.scd``
 
 Features
 ========
 
 * Snippets
-* Uses the native TextMate Browser to display the help
+* Help is displayed via the new SC Help System
 * Common commands (Recompile, Open Class File, Find References ...)
 
 Installation
