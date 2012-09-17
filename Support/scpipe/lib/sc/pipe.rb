@@ -1,41 +1,41 @@
 #!/usr/bin/ruby
-# 
+#
 # SC:Pipe derived from sclang_pipe (SCVIM Package)
 # Copyright 2007 Alex Norman under GPL
-# 
+#
 # modified 2010 stephen lumenta to work with the supercollider-txtmate-bundle
-# 
+#
 # http://github.com/sbl/supercollider-tmbundle
 
 require 'fileutils'
 require 'singleton'
 
 module SC
-  
-  class Pipe 
+
+  class Pipe
     include Singleton
-    
+
     @@pipe_loc = "/tmp/sclang-pipe"
     @@rundir = "/Applications/SuperCollider.app/Contents/Resources"
-    @@pid_loc = "/tmp/sclangpipe_app-pid" 
-        
+    @@pid_loc = "/tmp/sclangpipe_app-pid"
+
     class << self
       def serve
         prepare_pipe
         run_pipe
-        clean_up      
+        clean_up
       end
-      
+
       def pipe_loc
         @@pipe_loc
       end
-      
+
       def pid_loc
         @@pid_loc
       end
-            
+
       private
-      
+
       def prepare_pipe
         File.open(@@pid_loc, "w"){ |f|
           f.puts Process.pid
@@ -48,21 +48,21 @@ module SC
         #make a new pipe
         system("mkfifo", @@pipe_loc)
       end
-   
+
       def run_pipe
         Dir.chdir(@@rundir)
-        
+
         @@pipeproc = Proc.new {
           trap("INT") do
-            Process.exit
+          Process.exit
           end
-          
-          IO.popen("./sclang -d #{@@rundir.chomp} -i scmate", "w") do |sclang|
-            loop {
-              x = `cat #{@@pipe_loc}`
-              sclang.print x if x
-            }
-          end
+
+        IO.popen("./sclang -d #{@@rundir.chomp} -i scmate", "w") do |sclang|
+          loop {
+            x = `cat #{@@pipe_loc}`
+            sclang.print x if x
+          }
+        end
         }
         $p = Process.fork { @@pipeproc.call }
       end
@@ -83,7 +83,7 @@ module SC
         #we sleep until a signal comes
         sleep(1) until false
       end
-    
+
       def remove_files
         FileUtils.rm(@@pipe_loc)
         FileUtils.rm(@@pid_loc)
