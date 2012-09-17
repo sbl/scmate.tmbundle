@@ -11,8 +11,6 @@ There is a short preview `on vimeo <http://vimeo.com/12853571>`__.
 
   <iframe src="http://player.vimeo.com/video/12853571?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0"></iframe><p><a href="http://vimeo.com/12853571">SuperCollider Textmate Bundle</a> from <a href="http://vimeo.com/sbl">sbl</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
-Checkout the qt_35 branch if you want support for SuperCollider 3.5.
-
 Prerequisites
 =============
 
@@ -31,6 +29,7 @@ Installation
 ============
 
 * ``git clone http://github.com/sbl/scmate.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/scmate.tmbundle``
+* (under TextMate 2 these paths have changed to ``~/Libary/Application\ Support/Avian/Bundles/scmate.tmbundle``)
 * (OR) download `the bundle`_ and double-click it
 * choose "finish installation" from the Bundle Menu
 * Start the language with ``cmd+f1`` (a terminal window will come up)
@@ -44,7 +43,7 @@ Licence
 =======
 
 This work is licensed under the `GNU GPL`_ 
-sbl 2010
+sbl 2012
 
 .. _the announcement post: http://new-supercollider-mailing-lists-forums-use-these.2681727.n2.nabble.com/scmate-textmate-bundle-td5239359.html
 .. _GNU GPL: http://www.gnu.org/licenses/gpl.html
