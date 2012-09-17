@@ -30,7 +30,7 @@ Installation
 
 * ``git clone http://github.com/sbl/scmate.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/scmate.tmbundle``
 * (under TextMate 2 these paths have changed to ``~/Libary/Application\ Support/Avian/Bundles/scmate.tmbundle``)
-* (OR) download `the bundle`_ and double-click it
+* (OR) download `the bundle`_ and rename it to scmate.tmbundle then double-click it
 * choose "finish installation" from the Bundle Menu
 * Start the language with ``cmd+f1`` (a terminal window will come up)
 
@@ -47,5 +47,5 @@ sbl 2012
 
 .. _the announcement post: http://new-supercollider-mailing-lists-forums-use-these.2681727.n2.nabble.com/scmate-textmate-bundle-td5239359.html
 .. _GNU GPL: http://www.gnu.org/licenses/gpl.html
-.. _the bundle: http://github.com/downloads/sbl/scmate.tmbundle/scmate.tmbundle.zip
+.. _the bundle: https://github.com/sbl/scmate.tmbundle/zipball/master
 .. _supercollider-tmbundle: http://github.com/rfwatson/supercollider-tmbundle
