@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string># change path if you have SwingOSC installed somewhere else
 
-sc_dispatcher -s "Help.gui"</string>
+sc_dispatcher -s "HelpBrowser.openBrowsePage"</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
